@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --primary-color: #4CAF50;
+    --Landingcolor: #0a0a0a;
+    --colorTwo: #151515;
+    --navbarColor: #000000;
+    --text-color: #c53834;
+    --describtion-color: #626b72;
+    --text-two-color:#fefefe;
+    --font-family: 'Arial, sans-serif';
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: var(--colorTwo);
+    font-family: "Cairo", sans-serif;
+}
+/* ---------NavBar-Style-------- */
+.Navbar-Style-Admin{
+background-color: var(--navbarColor) !important;
+}
+.Text-Style{
+color: var(--text-two-color) !important;
+font-weight: bold;
+}
+.Text-Style:hover{
+color: var(--text-color) !important;
+transition: 0.9s;
+text-decoration: none;
+}
+.Text-Style::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: width 0.5s;
+}
+.Icon-Style{
+    background-color: white !important;
+}
+/* ----------------------- */
+
+/* ----------------Admin-Landing------------ */
+
+.Admin-Landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contaniner-img{
+background-color: red;
+    width: 500px;
+    height: 400px;
+    margin-top: 85px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.Contaniner-img img{
+    width: 100%;
+    height: 100%;
+}
+.Admin-Landing p{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+
+}
+.Admin-Landing p span{
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+
+}
+/* -----------Massage_text------ */
+.Massage_text{
+font-size: 38px;
+    background: linear-gradient(145deg, #ff003c 22%, #ffd32a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}

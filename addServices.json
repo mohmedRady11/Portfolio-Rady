@@ -1,0 +1,40 @@
+{
+  "MyServices": [
+    {
+      "id": 1,
+      "image": "faPen",
+      "title": "Creative Design",
+      "description": "A creative designer develops visual concepts that inspire, inform, and captivate audiences."
+    },
+    {
+      "id": 2,
+      "image": "faCode",
+      "title": "Clean Code",
+      "description": "Means writing programs in a clear, organized, and easy-to-understand way."
+    },
+    {
+      "id": 3,
+      "image": "faLaptop",
+      "title": "User Interface",
+      "description": "The part of a program or website that the user interacts with directly."
+    },
+    {
+      "id": 4,
+      "image": "faBagShopping",
+      "title": "User Experience",
+      "description": "Focuses on how easy, fast, and pleasant it is to use an app or website."
+    },
+    {
+      "id": 5,
+      "image": "faCrosshairs",
+      "title": "Fast Performance",
+      "description": "Means that a website or app runs quickly and responds instantly."
+    },
+    {
+      "id": 6,
+      "image": "faFlag",
+      "title": "Branding",
+      "description": "Creating a unique identity for a business or product."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+.AddProject {
+  background: radial-gradient(circle at top left, #ff003c, #1a000b 55%);
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.AddProject p{
+    font-size: 38px;
+    background: linear-gradient(145deg, #ff003c, #ffd32a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.AddProject form{
+        display: flex
+;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.AddProject form input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #8e0033;
+  background: rgba(255, 255, 255, 0.05); /* ملمس شفاف خفيف */
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px); /* يعطي تأثير زجاجي ناعم */
+}
+
+/* Hover effect */
+.AddProject form input:hover {
+  background: rgba(255, 0, 60, 0.1);
+  border-color: #ff003c;
+  box-shadow: 0 0 10px rgba(255, 0, 60, 0.5);
+}
+
+/* Focus effect */
+.AddProject form input:focus {
+  outline: none;
+  border-color: #ff003c;
+  background: rgba(255, 0, 60, 0.15);
+  box-shadow: 0 0 15px rgba(255, 0, 60, 0.7);
+  transform: scale(1.03);
+}
+
+
+.AddProject form button{
+    background: linear-gradient(145deg, #ff003c, #8e0033);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    border: 2px solid #ff003c;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    transition: all 0.4s 
+ease;
+    box-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c;
+}
+.AddProject form button:hover {
+    background-color: #ffffff;
+    color: #ff003c;
+    box-shadow: 0 0 15px #840202, 0 0 30px #ff003c;
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+}

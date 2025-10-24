@@ -1,0 +1,265 @@
+@media (min-width: 450px) and (max-width: 840px) {
+:root{
+    --primary-color: #4CAF50;
+    --Landingcolor: #0a0a0a;
+    --colorTwo: #151515;
+    --navbarColor: #000000;
+    --text-color: #c53834;
+    --describtion-color: #626b72;
+    --text-two-color:#fefefe;
+    --font-family: 'Arial, sans-serif';
+}
+.landing-page{
+    background-color: var(--Landingcolor);
+    height: 142vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.text-section{
+   /* نفس اللون اللي عندك */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* توسيط عمودي */
+  align-items: flex-start;      /* توسيط أفقي */           /* يخلي الصفحة بطول الشاشة */
+  margin: 0;
+  color: white;             /* يخلي الخط أبيض لو حبيت */
+  
+}
+.Hello-name{
+    font-weight: bold;
+    font-size: 26px;
+    margin-left: 30px;
+    color: var(--text-color);
+        margin-bottom: 0;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+.describtion{
+font-size: 12px;
+    width: 350px;
+    height: auto;
+    margin-left: 30px;
+    color: var(--describtion-color);
+
+}
+.btn-ContactMe{
+margin-left: 30px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color: var(--text-two-color);
+    border: none;
+    text-decoration: none;
+}
+.btn-ContactMe:hover{
+    background-color: var(--text-two-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    transition: 0.9s;
+    cursor: pointer;
+}
+.image-section{
+
+    flex-direction: column;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    
+}
+.image-container{
+    margin: 0;
+    width: 90%;
+    height: 400px;
+    background: linear-gradient(160deg, #b90000 0%, #000000 100%);
+    border-radius: 4px;
+    color:#fff;
+}
+.landing-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+/* -------------about-------- */
+.about{
+    background-color: var(--colorTwo);
+    color: var(--text-two-color);
+}
+.about-page{
+    display: grid;
+    grid-template-columns:  1fr;
+    height: auto;
+}
+.image-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.image-about-contaniner{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(160deg, #b90000 0%, #000000 100%);
+    border-radius: 4px;
+    color:#fff;
+}
+.container-text-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+.about-me{
+        font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    position: relative;
+}
+.about-me::before{
+content: "";
+display: block;
+border-color: transparent transparent transparent var(--text-color);
+border-width: 10px; /* ← قللتها بدل 25px */
+border-style: solid;
+background-color: transparent;
+position: absolute;
+left: -17px;
+    top: 7px;
+}
+.title-about{
+        font-size: 40px;
+    font-weight: bold;
+}
+.describtion-about{
+    height: auto;
+    font-size: 17px;
+    margin: 0;
+    padding: 20px;
+    color:var(--describtion-color);
+        margin-left: -55px;
+}
+.info-about{
+    background-color: var(--Landingcolor);
+    width: 90%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 15px;
+}
+.infoMe{
+    width: 100%;
+    height: 28px;
+    background-color: var(--colorTwo);
+    border-radius: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;       
+}
+.media-image-about{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.text-image-about{
+   margin: 0;
+}
+.hostBtn{
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+/* -------------service-------- */
+.Services{
+    background-color: var(--navbarColor);
+    height: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+.text-service{
+    width: 90%;
+    height: 140px;
+    background-color: var(--navbarColor);
+    display: flex
+;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 35px;
+    color: white;
+    
+}
+.hostService{
+    font-size: 13px;
+}
+.hostService::before{
+        top: 0px;
+    left: -11px;
+}
+.WhatCan{
+font-weight: bold;
+    font-size: 25px;
+}
+.contaniner-service{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--navbarColor);
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+}
+.WhatServiceContainer{
+width: 100%;
+    height: 200px;
+    background-color: var(--colorTwo);
+    color: var(--text-two-color);
+        border-radius: 10px;
+            cursor: pointer;
+}
+.imageService{
+      width: 45px;
+    margin-top: 30px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.title{
+        margin: 0;
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 900;
+}
+.discribtion{
+        width: 100%;
+        font-size: 9px;
+        padding: 12px;
+}
+/* --------------------resume------------ */
+.resume{
+    height: auto;
+    width: 100%;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+.profile{
+    width: 100%;
+    height: auto;
+    background-color: var(--text-color);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+}

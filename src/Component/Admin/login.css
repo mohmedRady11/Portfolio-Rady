@@ -1,0 +1,75 @@
+.login-container {
+  background-color: #000; /* خلفية الصفحة سوداء */
+  color: #fff;
+}
+
+.login-box {
+  background-color: #151515; /* اللون اللي طلبته */
+  color: #fff;
+  width: 380px;
+  border-top: 6px solid #e60000; /* خط علوي أحمر */
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); /* ظل أحمر خفيف */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.login-box:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+h3 {
+  color: #e60000;
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #ccc;
+}
+
+.form-control {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #333;
+  border-radius: 6px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #e60000;
+  box-shadow: 0 0 5px rgba(230, 0, 0, 0.7);
+}
+
+.btn-primaryy {
+  background-color: #e60000;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primaryy:hover {
+  background-color: #b30000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+a {
+  color: #e60000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #b30000;
+}
+
+/* رسائل الخطأ */
+.alert-danger {
+  background-color: #e60000;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+}
