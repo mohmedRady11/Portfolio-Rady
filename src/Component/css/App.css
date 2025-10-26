@@ -268,7 +268,7 @@ width: 100%;
     gap: 50px;
 }
 .ProjectStyle {
-    width: 340px;
+    width: 388px;
     height: auto;
     color: #ffffff;
     background: linear-gradient(165deg, #ff0018 -161%, #000000 90%);
@@ -277,7 +277,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 0.4rem;
     box-shadow: 0 0 20px rgba(255, 0, 24, 0.3);
     transition: all 0.4s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -872,6 +872,14 @@ transition: 0.9s;
 }
 .null{
     visibility: hidden;
+}
+.contact .form-result-fulfel{
+    color: forestgreen;
+    font-size:15px;
+}
+.contact .form-result-reject{
+    color: red;
+    font-size: 15px;
 }
 /* -------------footer----- */
 

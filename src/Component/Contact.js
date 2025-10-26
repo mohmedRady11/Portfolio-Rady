@@ -4,100 +4,75 @@ import "../Component/css/AppMobile.css";
 import "../Component/css/AppTab.css";
 import "../Component/css/AppTapsmall.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-function Contact() {
-  const [fristName, setFristName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [massage, setMassage] = useState("");
 
-  const [sendAllData, setSendAllData] = useState("");
-  const FormData = (e) => {
-    e.preventDefault();
-    const sendData = fetch("http://localhost:9000/contact", {
+function Contact() {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "952b8b04-77ae-440a-b947-8724a141e4df");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        fristName,
-        lastName,
-        email,
-        massage,
-      }),
-    }).then((res) => {
-      res.json();
+      body: formData,
     });
-    if (sendData) {
-      setSendAllData("✅ Data sent successfully!");
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Message sent successfully!");
+      event.target.reset(); // تصفير الفورم بعد الإرسال
     } else {
-      setSendAllData("Rejected Data Send");
+      setResult("Please try again.");
     }
   };
 
   return (
     <>
       <div id="contact" className="contact">
-        <p>i'd love to hear from you!!</p>
-        <form onSubmit={FormData} className="contactForm">
-          <div>
-            <input
-              onChange={(e) => {
-                setFristName(e.target.value);
-              }}
-              type="text"
-              placeholder="Frist Name"
-            />
-          </div>
-          <div>
-            <input
-              onChange={(e) => {
-                setLastName(e.target.value);
-              }}
-              type="text"
-              placeholder="Last Name"
-            />
-          </div>
-          <div>
-            <input
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              type="text"
-              placeholder="E-Mail"
-            />
-          </div>
+        <p>I'd love to hear from you!!</p>
+
+        <form onSubmit={onSubmit} className="contactForm">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="lastName" placeholder="Last Name" required />
+          <input type="email" name="email" placeholder="E-Mail" required />
           <textarea
-            onChange={(e) => {
-              setMassage(e.target.value);
-            }}
+            name="message"
             id="exampleFormControlTextarea1"
             rows="3"
-            placeholder="Massage..."
+            placeholder="Message..."
+            required
           ></textarea>
 
-          <button>Submit</button>
-          {sendAllData ? (
-            <div className="success-message">{sendAllData}</div>
-          ) : (
-            <div className="nullSended"></div>
-          )}
-          {sendAllData === false ? (
-            <div className="field-message">{sendAllData}</div>
-          ) : (
-            <div className="null"></div>
-          )}
+          <button type="submit">Submit</button>
         </form>
+
+        {result ? (
+          <p className="form-result-fulfel">{result}</p>
+        ) : (
+          <p className="form-result-reject">{result}</p>
+        )}
         <div className="secNextProject">
           <div className="textNext">
-            <h3>Lets Work together on your next project</h3>
+            <h3>Let's work together on your next project</h3>
             <p>
-              conllaboration is key! join forces and conbine our skills to
-              tackle your next project with a powerful synergy that guarantees
-              success.
+              Collaboration is key! Join forces and combine our skills to tackle
+              your next project with powerful synergy that guarantees success.
             </p>
           </div>
-          <button type="submit">Contact</button>
+          <a href="#contact">
+            <button>Contact</button>
+          </a>
         </div>
       </div>
     </>
   );
 }
+
 export default Contact;

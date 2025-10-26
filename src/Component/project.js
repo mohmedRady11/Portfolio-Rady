@@ -4,20 +4,21 @@ import "../Component/css/AppMobile.css";
 import "../Component/css/AppTab.css";
 import "../Component/css/AppTapsmall.css";
 import imageButton from "../Component/image/sahm.png";
+import ProjectsData from "./Data/ProjectsData";
 
 function Projects() {
   const [showAll, setShowAll] = useState(false);
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  const FetchDataProject = () => {
-    fetch("http://localhost:7000/Project")
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  };
-  useEffect(() => {
-    FetchDataProject();
-  }, []);
-  const visibleCards = showAll ? data : data.slice(0, 3);
+  // const FetchDataProject = () => {
+  //   fetch("http://localhost:7000/Project")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data));
+  // };
+  // useEffect(() => {
+  //   FetchDataProject();
+  // }, []);
+  const visibleCards = showAll ? ProjectsData : ProjectsData.slice(0, 3);
 
   return (
     <>

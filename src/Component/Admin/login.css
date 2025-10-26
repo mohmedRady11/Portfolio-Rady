@@ -73,3 +73,14 @@ a:hover {
   font-weight: 500;
   border-radius: 6px;
 }
+@media (max-width:450px){
+  .login-box {
+  background-color: #151515; /* اللون اللي طلبته */
+  color: #fff;
+  width: 290px;
+  border-top: 6px solid #e60000; /* خط علوي أحمر */
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); /* ظل أحمر خفيف */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+}

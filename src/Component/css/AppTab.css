@@ -335,3 +335,14 @@ padding: 5px 0px;
 }
 
 }
+
+@media (min-width:991px)and (max-width:1285px){
+
+.projectsMe {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+}
