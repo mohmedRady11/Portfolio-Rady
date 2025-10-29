@@ -10,11 +10,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Edu() {
   return (
     <div id="Services" className="Services">
-      <div className="text-service">
+      <div data-aos="fade-left" className="text-service">
         <p className="about-me hostService">My Services</p>
         <p className="WhatCan">What Can i Do</p>
       </div>
-      <div className="contaniner-service">
+      <div data-aos="fade-up" className="contaniner-service">
         {MyServices.map((service, index) => {
           return (
             <div key={index} className="WhatServiceContainer">

@@ -23,10 +23,10 @@ function Projects() {
   return (
     <>
       <div id="project" className="Mywork">
-        <div className="TitleWork">
+        <div data-aos="fade-down-right" className="TitleWork">
           <p>My Projects</p>
         </div>
-        <div className="projectsMe">
+        <div data-aos="fade-up" className="projectsMe">
           {visibleCards.map((work, index) => {
             return (
               <div className="ProjectStyle" key={index}>
@@ -41,6 +41,7 @@ function Projects() {
         </div>
         <div className="showMore">
           <button
+            data-aos="flip-down"
             onClick={() => {
               setShowAll(true);
             }}

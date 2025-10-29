@@ -11,7 +11,7 @@ function Landing() {
   return (
     <>
       <div id="home" className="landing-page">
-        <div className="text-section">
+        <div data-aos="fade-down" className="text-section">
           <p className="Hello-name">Hello, My Name Is </p>
           <p className="name">Mohmed Rady</p>
           <p className="describtion">
@@ -23,7 +23,7 @@ function Landing() {
             Contact Me
           </Link>
         </div>
-        <div className="image-section">
+        <div data-aos="fade-up" className="image-section">
           <div className="image-container ">
             <img src={image_one} alt="Landing" className="landing-image" />
           </div>

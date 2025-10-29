@@ -31,18 +31,32 @@ function Contact() {
   return (
     <>
       <div id="contact" className="contact">
-        <p>I'd love to hear from you!!</p>
+        <p data-aos="zoom-out-up">I'd love to hear from you!!</p>
 
         <form onSubmit={onSubmit} className="contactForm">
           <input
+            data-aos="zoom-in-down"
             type="text"
             name="firstName"
             placeholder="First Name"
             required
           />
-          <input type="text" name="lastName" placeholder="Last Name" required />
-          <input type="email" name="email" placeholder="E-Mail" required />
+          <input
+            data-aos="zoom-in-left"
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            data-aos="zoom-in-right"
+            type="email"
+            name="email"
+            placeholder="E-Mail"
+            required
+          />
           <textarea
+            data-aos="zoom-out"
             name="message"
             id="exampleFormControlTextarea1"
             rows="3"
@@ -50,16 +64,22 @@ function Contact() {
             required
           ></textarea>
 
-          <button type="submit">Submit</button>
+          <button data-aos="zoom-in" type="submit">
+            Submit
+          </button>
         </form>
 
         {result ? (
-          <p className="form-result-fulfel">{result}</p>
+          <p data-aos="zoom-in-up" className="form-result-fulfel">
+            {result}
+          </p>
         ) : (
-          <p className="form-result-reject">{result}</p>
+          <p data-aos="zoom-in-up" className="form-result-reject">
+            {result}
+          </p>
         )}
         <div className="secNextProject">
-          <div className="textNext">
+          <div data-aos="fade-right" className="textNext">
             <h3>Let's work together on your next project</h3>
             <p>
               Collaboration is key! Join forces and combine our skills to tackle
@@ -67,7 +87,7 @@ function Contact() {
             </p>
           </div>
           <a href="#contact">
-            <button>Contact</button>
+            <button data-aos="flip-left">Contact</button>
           </a>
         </div>
       </div>

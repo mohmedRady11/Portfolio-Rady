@@ -13,13 +13,13 @@ function About() {
   return (
     <div id="about" className="about">
       <div className="about-page">
-        <div className="image-about">
+        <div data-aos="fade-down" className="image-about">
           <div className="image-about-contaniner Block-image">
             {" "}
             <img src={image_one} alt="Landing" className="landing-image " />
           </div>
         </div>
-        <div className="text-about">
+        <div data-aos="fade-up" className="text-about">
           <div className="container-text-about">
             <p className="about-me">About Me</p>
             <h1 className="title-about">Who Am i</h1>
