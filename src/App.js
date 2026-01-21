@@ -36,7 +36,7 @@ function App() {
                 <Landing />
                 <About />
                 <Edu />
-                <Projects />
+                {/* <Projects /> */}
                 <Contact />
                 <Footer />
               </>

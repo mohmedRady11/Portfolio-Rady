@@ -21,7 +21,7 @@ function Footer() {
           <a href="https://www.facebook.com/mohmed.rady.406777/">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="https://www.linkedin.com/in/mohamed-rady-508848269">
+          <a href="https://www.linkedin.com/in/mohmedrady">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a href="https://github.com/mohmedRady11">

@@ -4,7 +4,7 @@ import "../Component/css/AppMobile.css";
 import "../Component/css/AppTab.css";
 import "../Component/css/AppTapsmall.css";
 import { Container } from "react-bootstrap";
-import image_one from "../Component/image/2.png";
+import image_one from "../Component/image/in.png";
 import { Link } from "react-scroll";
 
 function Landing() {
@@ -15,9 +15,11 @@ function Landing() {
           <p className="Hello-name">Hello, My Name Is </p>
           <p className="name">Mohmed Rady</p>
           <p className="describtion">
-            -I'm Mohamed Rady, a passionate Front-End Developer skilled in HTML,
-            CSS, JavaScript, and React.js. I love building clean, responsive
-            websites and improving my skills to create better user experiences.
+            I specialize in designing and managing secure, scalable, and
+            cost-effective Azure environments. With a focus on automation and
+            resource optimization, I recently improved system uptime by 20%. I
+            am dedicated to helping businesses streamline their cloud
+            infrastructure and achieve peak operational efficiency.
           </p>
           <Link to="contact" className="btn-ContactMe">
             Contact Me

@@ -2,39 +2,39 @@
   "MyServices": [
     {
       "id": 1,
-      "image": "faPen",
-      "title": "Creative Design",
-      "description": "A creative designer develops visual concepts that inspire, inform, and captivate audiences."
+      "image": "faCloud",
+      "title": "Azure Cloud Management",
+      "description": "Managing and monitoring Microsoft Azure resources to ensure high availability, scalability, and optimal performance."
     },
     {
       "id": 2,
-      "image": "faCode",
-      "title": "Clean Code",
-      "description": "Means writing programs in a clear, organized, and easy-to-understand way."
+      "image": "faServer",
+      "title": "Virtual Machines Administration",
+      "description": "Deploying, configuring, and maintaining Azure Virtual Machines for secure and reliable workloads."
     },
     {
       "id": 3,
-      "image": "faLaptop",
-      "title": "User Interface",
-      "description": "The part of a program or website that the user interacts with directly."
+      "image": "faNetworkWired",
+      "title": "Cloud Networking",
+      "description": "Configuring Azure Virtual Networks, subnets, NSGs, and VPN connections to ensure secure cloud communication."
     },
     {
       "id": 4,
-      "image": "faBagShopping",
-      "title": "User Experience",
-      "description": "Focuses on how easy, fast, and pleasant it is to use an app or website."
+      "image": "faShieldHalved",
+      "title": "Security & Identity Management",
+      "description": "Managing Azure Active Directory, role-based access control (RBAC), and implementing cloud security best practices."
     },
     {
       "id": 5,
-      "image": "faCrosshairs",
-      "title": "Fast Performance",
-      "description": "Means that a website or app runs quickly and responds instantly."
+      "image": "faGaugeHigh",
+      "title": "Monitoring & Performance Optimization",
+      "description": "Monitoring cloud resources using Azure Monitor and Log Analytics to improve performance and reduce downtime."
     },
     {
       "id": 6,
-      "image": "faFlag",
-      "title": "Branding",
-      "description": "Creating a unique identity for a business or product."
+      "image": "faArrowsRotate",
+      "title": "Backup & Disaster Recovery",
+      "description": "Implementing backup strategies and disaster recovery solutions to protect data and ensure business continuity."
     }
   ]
 }

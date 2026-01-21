@@ -1,56 +1,56 @@
 import imageOne from "../image/Laptop.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faPen,
-  faLaptop,
-  faCode,
-  faBagShopping,
-  faSpinnerScale,
-  faCrosshairs,
-  faFlag,
+  faCloud,
+  faServer,
+  faNetworkWired,
+  faShieldHalved,
+  faGaugeHigh,
+  faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
+
 const MyServices = [
   {
     id: 1,
-    image: faPen,
-    title: "Creative Design",
+    image: faCloud,
+    title: "Azure Cloud Management",
     describtion:
-      "A creative designer develops visual concepts that inspire, inform, and captivate audiences through elements like color, typography, layout, and imagery.",
+      "Managing Microsoft Azure resources to ensure scalability, availability, and cost-effective cloud environments.",
   },
   {
     id: 2,
-    image: faCode,
-    title: "Clean Code",
+    image: faServer,
+    title: "Virtual Machines Administration",
     describtion:
-      "means writing programs in a clear, organized, and easy-to-understand way.It follows good structure and naming so that anyone reading the code can quickly know what it does.",
+      "Deploying, configuring, and maintaining Azure Virtual Machines to support secure and reliable workloads.",
   },
   {
     id: 3,
-    image: faLaptop,
-    title: "User Interface",
+    image: faNetworkWired,
+    title: "Cloud Networking",
     describtion:
-      " means the part of a program, website, or application that the user interacts with directly.It includes everything the user sees and touches — such as buttons, text fields, images, icons, colors, and layout.",
+      "Configuring Azure Virtual Networks, subnets, NSGs, and VPN connections to enable secure cloud communication.",
   },
   {
     id: 4,
-    image: faBagShopping,
-    title: "User Experience",
+    image: faShieldHalved,
+    title: "Security & Identity Management",
     describtion:
-      "User Experience (UX) means how a person feels when using a product, website, or app.It focuses on the overall experience — how easy, fast, and pleasant it is to use.",
+      "Managing Azure Active Directory, RBAC, and applying cloud security best practices to protect resources.",
   },
   {
     id: 5,
-    image: faCrosshairs,
-    title: "Fast Performance",
+    image: faGaugeHigh,
+    title: "Monitoring & Performance Optimization",
     describtion:
-      "Fast Performance means that a website or application runs quickly and responds instantly to user actions.It helps users complete their tasks without waiting, improving satisfaction and overall experience.",
+      "Monitoring Azure resources using Azure Monitor and Log Analytics to improve performance and reduce downtime.",
   },
   {
-    id: 5,
-    image: faFlag,
-    title: "Pranding",
+    id: 6,
+    image: faArrowsRotate,
+    title: "Backup & Disaster Recovery",
     describtion:
-      "means creating a unique identity for a business or product through design, colors, logo, and message.It helps people recognize and remember the brand, making it stand out from competitors.",
+      "Implementing backup and disaster recovery strategies to protect data and ensure business continuity.",
   },
 ];
 

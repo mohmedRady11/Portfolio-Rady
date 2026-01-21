@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 body {
 font-family: "Cairo", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 
@@ -792,6 +795,7 @@ width: 25%;
     font-weight: bold;
     outline: none;
     border: none;
+     transition: 1s;
 }
 .contact form button:hover{
     background-color: white;

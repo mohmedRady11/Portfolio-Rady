@@ -32,7 +32,7 @@ function Projects() {
               <div className="ProjectStyle" key={index}>
                 <img src={work.image} />
                 <p className="titleProject">{work.title}</p>
-                <a href={work.describtion} className="describtionProject">
+                <a href={work.describtion} className=" describtionProject">
                   GitHup Link
                 </a>
               </div>
