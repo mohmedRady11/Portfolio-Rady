@@ -56,8 +56,10 @@ function About() {
                 <p className="text-image-about">React</p>
               </div> */}
             </div>
-            <a href="/cv2.pdf" download>
-              <button className="btn-ContactMe hostBtn">Download Cv</button>
+            <a href="/cv2.pdf" download="Mohamed_Rady_CV.pdf">
+              <button type="button" className="btn-ContactMe hostBtn">
+                Download CV
+              </button>
             </a>
           </div>
         </div>
