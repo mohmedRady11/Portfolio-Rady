@@ -56,7 +56,7 @@ function About() {
                 <p className="text-image-about">React</p>
               </div> */}
             </div>
-            <a href="/CV Main.pdf" download>
+            <a href="/cv2.pdf" download>
               <button className="btn-ContactMe hostBtn">Download Cv</button>
             </a>
           </div>
